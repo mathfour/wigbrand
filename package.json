@@ -1,0 +1,25 @@
+{
+  "name": "wigbrand",
+  "version": "1.0.0",
+  "description": "Project 2 - Darrell, Demarcus and Me",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathfour/wigband.git"
+  },
+  "author": "Darrell Freeman, Marcus Smith, Bon Crowder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathfour/wigband/issues"
+  },
+  "homepage": "https://github.com/mathfour/wigband#readme",
+  "dependencies": {
+    "path": "^0.12.7",
+    "sequelize": "^4.2.0",
+    "sequelize-cli": "^2.7.0"
+  }
+}
