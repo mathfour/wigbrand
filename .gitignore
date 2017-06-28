@@ -1,6 +1,7 @@
 node_modules
 .DS_Store
 .idea/
+config/config.json
 
 # Build and Release Folders
 bin/
