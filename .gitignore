@@ -3,7 +3,6 @@ node_modules
 .idea/
 config/config.json
 
-
 # Build and Release Folders
 bin/
 bin-debug/
