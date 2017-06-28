@@ -1,25 +1,31 @@
 {
-  "name": "wigbrand",
+
+  "name": "marsproject",
   "version": "1.0.0",
-  "description": "Project 2 - Darrell, Demarcus and Me",
+  "description": "Math anxiety ratings scale data project",
   "main": "server.js",
+  "dependencies": {
+    "mysql": "^2.13.0",
+    "sequelize": "^4.2.0",
+    "body-parser":"^1.17.2",
+    "express":"^4.15.3",
+     "path": "^0.12.7",
+    "sequelize-cli": "^2.7.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
     "start": "node server.js"
   },
-  "repository": {
+"repository": {
     "type": "git",
     "url": "git+https://github.com/mathfour/wigband.git"
   },
-  "author": "Darrell Freeman, Marcus Smith, Bon Crowder",
-  "license": "ISC",
-  "bugs": {
+ "bugs": {
     "url": "https://github.com/mathfour/wigband/issues"
   },
   "homepage": "https://github.com/mathfour/wigband#readme",
-  "dependencies": {
-    "path": "^0.12.7",
-    "sequelize": "^4.2.0",
-    "sequelize-cli": "^2.7.0"
-  }
+  "author": "Darrell Freeman, Marcus Smith, Bon Crowder",
+  "license": "MIT"
+
 }
