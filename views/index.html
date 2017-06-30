@@ -13,265 +13,31 @@
 			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			  crossorigin="anonymous"></script>
 
-    <style>
-
-        body {
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
-
-        .container {
-            transition: all .9s;
-        }
-
-        .container-fluid {
-            transition: all .9s;
-        }
-
-        .square {
-            background-image: url("../public/images/photo1.jpg");
-            background-repeat: no-repeat;
-            background-size:100%;
-            width: 100%;
-            height: 900px;
-            margin-top: 50px;
-        }
-
-        .nav-color-1 {
-            background: #2e4053; 
-            padding: 10px;
-            transition: all .9s;   
-        }
-
-        .nav-color-2 {
-            background:  #30c5a8;  
-            transition: all .9s;
-        }
-
-        .slide-in-right-1 {
-            margin-left: 100%;
-            background: #CCCCFF;
-            height: 450px;
-            width: 100%;
-            transition: all .9s;
-            margin-top: 10px;
-            
-        }
-
-        .slide-in-right-2 {
-            margin-right: 0%;
-            background: #171735;
-            height: 450px;
-            width: 100%;
-            transition: all .9s;
-            margin-top: 10px;
-        }
-
-        .slide-in-left-1 {
-            margin-left: -1370px;
-            background: white;
-            height: 450px;
-            width: 100%;
-            transition: all .9s;
-            margin-top: 10px;
-            
-        }
-
-        .slide-in-left-2 {
-            margin-left: 0%;
-            background: #414241;
-            height: 450px;
-            width: 100%;
-            transition: all .9s;
-            margin-top: 10px;
-        }
-
-        .bottom-content {            
-            background-image: url(../public/images/kid4.jpg);
-            height: 450px;
-            width: 100%;
-            transition: all .9s;
-            margin-top: 10px;
-        }
-
-        .tint {
-            z-index: 1;
-            height: 100%;
-            width: 100%;
-            position: relative;
-            top: 0px;
-            left: 0px;
-            background: rgba(0, 0, 0, 0.7); 
-            transition: ease-in-out .5s;
-
-
-        }
-
-        .imgDem {
-            height: 450px;
-            width: 660px;
-        }
-
-        .vcenter {
-            margin-top: 170px;
-        }
-
-        .btnCustom {
-            -webkit-border-radius: 60;
-            -moz-border-radius: 60;
-            border-radius: 60px;
-            font-family: Arial;
-            color: #ffffff;
-            font-size: 50px;
-            background: rgba(10, 51, 79, 0.3);
-            padding: 25px 25px 25px 26px;
-            border: solid #ffffff 5px;
-            text-decoration: none;
-        }
-
-        .btnCustom:hover {
-            background: rgba(60, 176, 253, 0.7);
-            text-decoration: none;
-            transition: ease-in-out .1s;
-            color: white;
-        }
-
-
-
-
-        p.thought {
-            position: relative;
-            width: 130px;
-            height: 100px;
-            text-align: center;
-            line-height: 100px;
-            background-color: #fff;
-            border: 8px solid #666;
-            -webkit-border-radius: 58px;
-            -moz-border-radius: 58px;
-            border-radius: 58px;
-            -webkit-box-shadow: 2px 2px 4px #888;
-            -moz-box-shadow: 2px 2px 4px #888;
-            box-shadow: 2px 2px 4px #888;
-        }
-
-        p.thought:before, p.thought:after {
-            left: 10px;
-            top: 70px;
-            width: 40px;
-            height: 40px;
-            background-color: #fff;
-            border: 8px solid #666;
-            -webkit-border-radius: 28px;
-            -moz-border-radius: 28px;
-            border-radius: 28px;
-        }
-
-        p.thought:after {
-            width: 20px;
-            height: 20px;
-            left: 5px;
-            top: 100px;
-            -webkit-border-radius: 18px;
-            -moz-border-radius: 18px;
-            border-radius: 18px;
-        }
-
-     
-
-
-    </style>
-
-    <script>
-
-        $(function(){
-
-            $(window).on("scroll", function(){
-
-                var xpos = $(window).scrollTop();
-
-                console.log(xpos);
-
-                if(xpos > 130) {
-
-                    $("nav").removeClass("nav-color-1").addClass("nav-color-2");
-                    $("#words").removeClass("container-fluid").addClass("container");
-
-
-                } else {
-
-                    $("nav").removeClass("nav-color-2").addClass("nav-color-1");
-                    $("#words").removeClass("container").addClass("container-fluid");
-
-
-                }
-
-                if(xpos > 280) {
-                    $("#big-picture").addClass("tint");
-                } else {
-                    $("#big-picture").removeClass("tint");
-
-                }
-
-                if(xpos > 350) {
-
-                    $("#content-1").removeClass("slide-in-right-1").addClass("slide-in-right-2");
-                    
-
-                } else {
-                    $("#content-1").removeClass("slide-in-right-2").addClass("slide-in-right-1");
-                }
-
-
-                 if(xpos > 800) {
-
-                    $("#content-2").removeClass("slide-in-left-1").addClass("slide-in-left-2");
-                } else {
-                    $("#content-2").removeClass("slide-in-left-2").addClass("slide-in-left-1");
-                }
-
-                if(xpos > 1350) {
-
-                    $("#content-3").removeClass("slide-in-right-1").addClass("slide-in-right-2");
-                } else {
-                    $("#content-3").removeClass("slide-in-right-2").addClass("slide-in-right-1");
-                }
-
-
-            });
-
-        });
-
-    </script>
-
-
-
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
 <body>
 
     <nav class="navbar nav-color-1 navbar-fixed-top">
         <div id="words" class="container-fluid">
             <div class="navbar-header">
-                 <a class="navbar-brand" href="#">Wigbrand</a>
+                 <a id="title" class="navbar-brand" href="/">Wigbrand</a>
             </div>
-            <ul class="nav navbar-nav pull-right">
+            <ul id="list" class="nav navbar-nav pull-right">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Survey</a></li>
-                <li><a href="#">Data Analysis</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/survey">Survey</a></li>
+                <li><a href="/data-analysis">Data Analysis</a></li>
             </ul>
         </div>
     </nav>
 
+            <div class="square">
+                <div id="big-picture">
+                </div>
 
 
-        <div class="square">
-            <div id="big-picture">
+
             </div>
-
-
-
-        </div>
 
         <div id="content-1" class="row slide-in-right-1">
             <img class="imgDem pull-right" src="../public/images/kid2.jpg">
@@ -305,14 +71,12 @@
 
                 <p class=""> </p>
 
-            
-
-
         </div>
 
         <div id="content-4" class="bottom-content text-center">
             <div class="tint">
-                <button class="btnCustom" style="margin-top: 170px;"> Take Our Survey </button>
+
+                <a href="/survey"><button class="btnCustom" style="margin-top: 170px;"> Take Our Survey </button></a>
             </div>
         </div>
 
@@ -324,6 +88,8 @@
 			  src="https://code.jquery.com/jquery-3.2.1.min.js"
 			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			  crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../public/js/animations.js"></script>
 
 </body>
 </html>
