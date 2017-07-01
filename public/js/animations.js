@@ -3,29 +3,13 @@
             $(window).on("scroll", function(){
 
                 var xpos = $(window).scrollTop();
-                console.log(xpos);
-
 
                 if(xpos > 200) {
-                    $("#content-1").removeClass("slide-in-right-1").addClass("slide-in-right-2");
-                    $("#big-picture").addClass("tint");
-                    $("nav").removeClass("nav-color-1").addClass("nav-color-2");
-                    //$("#words").removeClass("container-fluid").addClass("container");
-                    $("#title").css("transform", "translateX(13em)");
-                    $("#list").css("transform", "translateX(-13em)");
-
+                    movement();
+                    
                 } else {
-                    $("#content-1").removeClass("slide-in-right-2").addClass("slide-in-right-1");
-                    $("#big-picture").removeClass("tint");
-                    $("nav").removeClass("nav-color-2").addClass("nav-color-1");
-                  //  $("#words").removeClass("container").addClass("container-fluid");
-                     $("#title").css("transform", "translateX(0em)");
-                     $("#list").css("transform", "translateX(0em)");
-
-
-
+                    init();   
                 }
-
 
                  if(xpos > 630) {
 
@@ -43,5 +27,24 @@
 
 
             });
+
+            function movement () {
+                $("#content-1").removeClass("slide-in-right-1").addClass("slide-in-right-2");
+                $("#big-picture").addClass("tint");
+                $("nav").removeClass("nav-color-1").addClass("nav-color-2");
+                $("#title").css("transform", "translateX(13em)");
+                $("#list").css("transform", "translateX(-13em)");
+            }
+
+            // the position the navbar elements will be by default
+
+            function init () {
+                $("#content-1").removeClass("slide-in-right-2").addClass("slide-in-right-1");
+                $("#big-picture").removeClass("tint");
+                $("nav").removeClass("nav-color-2").addClass("nav-color-1");
+                $("#title").css("transform", "translateX(0em)");
+                $("#list").css("transform", "translateX(0em)");
+
+            }
 
         });
