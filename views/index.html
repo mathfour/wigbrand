@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testing page</title>  
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"                                             integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+
+    <style>
+
+        body {
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        .container {
+            transition: all .9s;
+        }
+
+        .container-fluid {
+            transition: all .9s;
+        }
+
+        .square {
+            background-image: url(../public/images/photo1.jpg);
+            background-repeat: no-repeat;
+            background-size:100%;
+            width: 100%;
+            height: 900px;
+            margin-top: 50px;
+        }
+
+        .nav-color-1 {
+            background: #2e4053; 
+            padding: 10px;
+            transition: all .9s;   
+        }
+
+        .nav-color-2 {
+            background:  #30c5a8;  
+            transition: all .9s;
+        }
+
+        .slide-in-right-1 {
+            margin-left: 100%;
+            background: blue;
+            height: 450px;
+            width: 100%;
+            transition: all .9s;
+            margin-top: 10px;
+            
+        }
+
+        .slide-in-right-2 {
+            margin-right: 0%;
+            background: blue;
+            height: 450px;
+            width: 100%;
+            transition: all .9s;
+            margin-top: 10px;
+        }
+
+        .slide-in-left-1 {
+            margin-left: -1500px;
+            background: green;
+            height: 450px;
+            width: 100%;
+            transition: all .9s;
+            margin-top: 10px;
+            
+        }
+
+        .slide-in-left-2 {
+            margin-left: 0%;
+            background: green;
+            height: 450px;
+            width: 100%;
+            transition: all .9s;
+            margin-top: 10px;
+        }
+
+        .slide-in-bottom-1 {
+            margin-bottom: -5000px;
+            background: gray;
+            height: 450px;
+            width: 100%;
+            transition: all .9s;
+            margin-top: 10px;
+
+
+        }
+
+        .imgDem {
+            height: 450px;
+            width: 660px;
+            border-radius: 5px;
+        }
+
+     
+
+
+    </style>
+
+    <script>
+
+        $(function(){
+
+            $(window).on("scroll", function(){
+
+                var xpos = $(window).scrollTop();
+
+                console.log(xpos);
+
+                if(xpos > 130) {
+
+                    $("nav").removeClass("nav-color-1").addClass("nav-color-2");
+                    $("#words").removeClass("container-fluid").addClass("container");
+
+
+                } else {
+
+                    $("nav").removeClass("nav-color-2").addClass("nav-color-1");
+                    $("#words").removeClass("container").addClass("container-fluid");
+
+
+                }
+
+                if(xpos > 220) {
+
+                    $("#content-1").removeClass("slide-in-right-1").addClass("slide-in-right-2");
+                } else {
+                    $("#content-1").removeClass("slide-in-right-2").addClass("slide-in-right-1");
+                }
+
+
+                 if(xpos > 620) {
+
+                    $("#content-2").removeClass("slide-in-left-1").addClass("slide-in-left-2");
+                } else {
+                    $("#content-2").removeClass("slide-in-left-2").addClass("slide-in-left-1");
+                }
+
+                if(xpos > 1150) {
+
+                    $("#content-3").removeClass("slide-in-right-1").addClass("slide-in-right-2");
+                } else {
+                    $("#content-3").removeClass("slide-in-right-2").addClass("slide-in-right-1");
+                }
+
+
+            });
+
+        });
+
+    </script>
+
+
+
+</head>
+<body>
+
+    <nav class="navbar nav-color-1 navbar-fixed-top">
+        <div id="words" class="container-fluid">
+            <div class="navbar-header">
+                 <a class="navbar-brand" href="#">That Cool Website</a>
+            </div>
+            <ul class="nav navbar-nav pull-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Survey</a></li>
+                <li><a href="#">Data Analysis</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+        <div class="row square">
+
+
+        </div>
+
+        <div id="content-1" class="row slide-in-right-1">
+            <img class="imgDem pull-right" src="../public/images/kid2.jpg">
+
+
+
+            
+
+
+        </div>
+
+        <div id="content-2" class="row slide-in-left-1">
+            <img class="imgDem pull-left" src="../public/images/kid3.jpg">
+
+
+        </div>
+
+        <div id="content-3" class="row slide-in-right-1">
+            <img class="imgDem pull-right" src="../public/images/kid1.jpg">
+
+            
+
+
+        </div>
+
+        <div id="content-4" class="slide-in-bottom-1">
+
+
+        </div>
+
+
+
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"                    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+   <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+
+</body>
+</html>
