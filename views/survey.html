@@ -25,13 +25,15 @@
 
     <link rel="stylesheet" href="../public/css/style.css">
 
+     <link href="https://fonts.googleapis.com/css?family=Bitter|Merriweather|Nunito" rel="stylesheet"> 
+
 </head>
 <body>
 
     <nav class="navbar nav-color-1">
-        <div id="words" class="container-fluid">
+        <div id="words" class="container">
             <div class="navbar-header">
-                 <a class="navbar-brand" href="#">Wigbrand</a>
+                 <a class="navbar-brand" href="/">Wigbrand</a>
             </div>
             <ul class="nav navbar-nav pull-right">
                 <li class="active"><a href="/">Home</a></li>
@@ -44,12 +46,20 @@
 
     <div class="container">
 
+         <div class="progress navbar-fixed-top">
+            <div class="progress-bar progress-bar-striped active" role="progressbar"
+            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%; min-width:20px" >
+                0%
+            </div>
+        </div> 
+
         <h1>Survey Questions </h1>
         <hr>
 
         <div id="form">
             <p class="question">1. What is your age ?</p>
-            <select id="q1" class="selectpicker ignore">
+            <select id="q1" class="selectpicker drp-downs">
+                <option></option>
                 <option value='1'>1</option>
                 <option value='2'>2</option>
                 <option value='3'>3</option>
@@ -153,7 +163,8 @@
             </select>
 
             <p class="question">2. What is your race?</p>
-            <select id="q2" class="selectpicker ignore">
+            <select id="q2" class="selectpicker drp-downs">
+                <option></option>
                 <option>American Indian</option>
                 <option>Asian</option>
                 <option>African American</option>
@@ -164,7 +175,8 @@
             </select>
 
             <p class="question">3. Where do you live?</p>
-            <select id="q3" class="selectpicker ignore">
+            <select id="q3" class="selectpicker drp-downs">
+                <option></option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -225,7 +237,8 @@
             </ul>
 
             <p class="question">5. What is your level education?</p>
-            <select id="q5" class="selectpicker ignore">
+            <select id="q5" class="selectpicker drp-downs">
+                <option></option>
                 <option value="elementary">Elementary</option>
                 <option value="Middle School">Middle School</option>
                 <option value="GED">GED</option>
@@ -479,7 +492,7 @@
 
         </div>
 
-        <button class="btn btn-primary">Submit</button>
+        <button id="submit" class="btn btn-primary">Submit</button>
         <br>
         <br>
 
@@ -491,6 +504,9 @@
 			  src="https://code.jquery.com/jquery-3.2.1.min.js"
 			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			  crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../public/js/progressbar.js"></script>
+
 
     <script type="text/javascript" src="../public/js/submit.js"></script>
 

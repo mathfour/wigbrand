@@ -1,35 +1,38 @@
 $(function() {
 
-    $("button").on("click", function(){
+    $("#submit").on("click", function(){
 
-        if (
-
-            $("input[name=q6]:checked").val() === undefined ||
-            !$("input[name=q6]:checked").val() ||
-            !$("input[name=q7]:checked").val() ||
-            !$("input[name=q8]:checked").val() ||
-            !$("input[name=q9]:checked").val() ||
-            !$("input[name=q10]:checked").val() ||
-            !$("input[name=q11]:checked").val() ||
-            !$("input[name=q12]:checked").val() ||
-            !$("input[name=q13]:checked").val() ||
-            !$("input[name=q14]:checked").val() ||
-            !$("input[name=q15]:checked").val() ||
-            !$("input[name=q16]:checked").val() ||
-            !$("input[name=q17]:checked").val() ||
-            !$("input[name=q18]:checked").val() ||
-            !$("input[name=q19]:checked").val() ||
-            !$("input[name=q20]:checked").val() ||
-            !$("input[name=q21]:checked").val() ||
-            !$("input[name=q22]:checked").val() ||
-            !$("input[name=q23]:checked").val() ||
-            !$("input[name=q24]:checked").val() ||
-            !$("input[name=q25]:checked").val() ||
-            !$("input[name=q26]:checked").val() ||
-            !$("input[name=q27]:checked").val() ||
-            !$("input[name=q28]:checked").val() ||
-            !$("input[name=q29]:checked").val() ||
-            !$("input[name=q30]:checked").val()
+            if (
+               parseInt($("#q1 option:selected").val()) === NaN ||
+                $("#q2 option:selected").text() === "" ||
+                $("#q3 option:selected").val() === "" ||
+                $("input[name=q4]:checked").val() === undefined ||
+                $("#q5 option:selected").val() === "" ||
+                !$("input[name=q6]:checked").val() ||
+                !$("input[name=q7]:checked").val() ||
+                !$("input[name=q8]:checked").val() ||
+                !$("input[name=q9]:checked").val() ||
+                !$("input[name=q10]:checked").val() ||
+                !$("input[name=q11]:checked").val() ||
+                !$("input[name=q12]:checked").val() ||
+                !$("input[name=q13]:checked").val() ||
+                !$("input[name=q14]:checked").val() ||
+                !$("input[name=q15]:checked").val() ||
+                !$("input[name=q16]:checked").val() ||
+                !$("input[name=q17]:checked").val() ||
+                !$("input[name=q18]:checked").val() ||
+                !$("input[name=q19]:checked").val() ||
+                !$("input[name=q20]:checked").val() ||
+                !$("input[name=q21]:checked").val() ||
+                !$("input[name=q22]:checked").val() ||
+                !$("input[name=q23]:checked").val() ||
+                !$("input[name=q24]:checked").val() ||
+                !$("input[name=q25]:checked").val() ||
+                !$("input[name=q26]:checked").val() ||
+                !$("input[name=q27]:checked").val() ||
+                !$("input[name=q28]:checked").val() ||
+                !$("input[name=q29]:checked").val() ||
+                !$("input[name=q30]:checked").val()
         ) 
     {
         console.log("this should run!");           
@@ -37,8 +40,7 @@ $(function() {
     } 
     else {
 
-
-            var results = [
+        var results = [
                     parseInt($("#q1 option:selected").val()),
                     $("#q2 option:selected").text(),
                     $("#q3 option:selected").val(),
@@ -71,26 +73,11 @@ $(function() {
                     parseInt($("input[name=q30]:checked").val()),
                 ];
 
-
                 //then we'll send the post request
             }
-
-                
-
             console.log(results);
 
             return false;
         });
-
-
-
-
-
-
-
-
-
-
-
 
 })
