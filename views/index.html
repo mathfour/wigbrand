@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Testing page</title>  
 
+        <link rel="stylesheet" href="../public/css/fonts.css">
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"                                             integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <script
@@ -13,153 +16,14 @@
 			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			  crossorigin="anonymous"></script>
 
-    <style>
+    <link rel="stylesheet" href="../public/css/style.css">
 
-        body {
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
+    <link rel="stylesheet" href="../public/css/mobile-home.css">
 
-        .container {
-            transition: all .9s;
-        }
-
-        .container-fluid {
-            transition: all .9s;
-        }
-
-        .square {
-            background-image: url(../public/images/photo1.jpg);
-            background-repeat: no-repeat;
-            background-size:100%;
-            width: 100%;
-            height: 900px;
-            margin-top: 50px;
-        }
-
-        .nav-color-1 {
-            background: #2e4053; 
-            padding: 10px;
-            transition: all .9s;   
-        }
-
-        .nav-color-2 {
-            background:  #30c5a8;  
-            transition: all .9s;
-        }
-
-        .slide-in-right-1 {
-            margin-left: 100%;
-            background: blue;
-            height: 450px;
-            width: 100%;
-            transition: all .9s;
-            margin-top: 10px;
-            
-        }
-
-        .slide-in-right-2 {
-            margin-right: 0%;
-            background: blue;
-            height: 450px;
-            width: 100%;
-            transition: all .9s;
-            margin-top: 10px;
-        }
-
-        .slide-in-left-1 {
-            margin-left: -1500px;
-            background: green;
-            height: 450px;
-            width: 100%;
-            transition: all .9s;
-            margin-top: 10px;
-            
-        }
-
-        .slide-in-left-2 {
-            margin-left: 0%;
-            background: green;
-            height: 450px;
-            width: 100%;
-            transition: all .9s;
-            margin-top: 10px;
-        }
-
-        .slide-in-bottom-1 {
-            margin-bottom: -5000px;
-            background: gray;
-            height: 450px;
-            width: 100%;
-            transition: all .9s;
-            margin-top: 10px;
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Ubuntu" rel="stylesheet">
 
 
-        }
 
-        .imgDem {
-            height: 450px;
-            width: 660px;
-            border-radius: 5px;
-        }
-
-     
-
-
-    </style>
-
-    <script>
-
-        $(function(){
-
-            $(window).on("scroll", function(){
-
-                var xpos = $(window).scrollTop();
-
-                console.log(xpos);
-
-                if(xpos > 130) {
-
-                    $("nav").removeClass("nav-color-1").addClass("nav-color-2");
-                    $("#words").removeClass("container-fluid").addClass("container");
-
-
-                } else {
-
-                    $("nav").removeClass("nav-color-2").addClass("nav-color-1");
-                    $("#words").removeClass("container").addClass("container-fluid");
-
-
-                }
-
-                if(xpos > 220) {
-
-                    $("#content-1").removeClass("slide-in-right-1").addClass("slide-in-right-2");
-                } else {
-                    $("#content-1").removeClass("slide-in-right-2").addClass("slide-in-right-1");
-                }
-
-
-                 if(xpos > 620) {
-
-                    $("#content-2").removeClass("slide-in-left-1").addClass("slide-in-left-2");
-                } else {
-                    $("#content-2").removeClass("slide-in-left-2").addClass("slide-in-left-1");
-                }
-
-                if(xpos > 1150) {
-
-                    $("#content-3").removeClass("slide-in-right-1").addClass("slide-in-right-2");
-                } else {
-                    $("#content-3").removeClass("slide-in-right-2").addClass("slide-in-right-1");
-                }
-
-
-            });
-
-        });
-
-    </script>
 
 
 
@@ -167,53 +31,76 @@
 <body>
 
     <nav class="navbar nav-color-1 navbar-fixed-top">
-        <div id="words" class="container-fluid">
+        <div id="words" class="container">
             <div class="navbar-header">
-                 <a class="navbar-brand" href="#">That Cool Website</a>
+                 <a id="title" class="navbar-brand" href="/">Wigbrand</a>
             </div>
-            <ul class="nav navbar-nav pull-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Survey</a></li>
-                <li><a href="#">Data Analysis</a></li>
+            <ul id="list" class="nav navbar-nav pull-right">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/survey">Survey</a></li>
+                <li><a href="/data-analysis">Data Analysis</a></li>
             </ul>
         </div>
     </nav>
 
-
-
-        <div class="row square">
-
-
-        </div>
+            <div class="square">
+                <div id="big-picture">
+                </div>
+            </div>
 
         <div id="content-1" class="row slide-in-right-1">
-            <img class="imgDem pull-right" src="../public/images/kid2.jpg">
+        
+            <div class="col-md-6 text-center ">
+                <h2 class="header2"> Cool Sub-title </h2>
 
+                <p class="vcenter psPos">
+                     Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+            </div>
 
-
-            
-
+             <div class="col-md-6">
+                <img class="imgDem" src="../public/images/kid2.jpg">
+            </div>
 
         </div>
 
         <div id="content-2" class="row slide-in-left-1">
-            <img class="imgDem pull-left" src="../public/images/kid3.jpg">
+
+            <div class="col-md-6">
+                <img class="imgDem" src="../public/images/guy.jpg">
+            </div>
+
+            <div class="col-md-6 text-center ">
+                <h2 class="header2"> Cool Sub-title </h2>
+
+                <p class="vcenter2 psPos2">
+                     Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+            </div>
 
 
         </div>
 
         <div id="content-3" class="row slide-in-right-1">
-            <img class="imgDem pull-right" src="../public/images/kid1.jpg">
+    
+                <div class="col-md-6 text-center ">
+                    <h2 class="header2"> Cool Sub-title </h2>
+                    <p class="vcenter psPos">
+                        Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    </p>
+                </div>
 
-            
-
-
+                <div class="col-md-6">
+                    <img class="imgDem" src="../public/images/kid1.jpg">
+                </div>
         </div>
 
-        <div id="content-4" class="slide-in-bottom-1">
+        <div id="content-4" class="bottom-content text-center">
+            <div class="tint">
 
-
+                <a href="/survey"><button class="btnCustom" style="margin-top: 170px;"> Take Our Survey </button></a>
+            </div>
         </div>
 
 
@@ -224,6 +111,8 @@
 			  src="https://code.jquery.com/jquery-3.2.1.min.js"
 			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			  crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../public/js/animations.js"></script>
 
 </body>
 </html>
