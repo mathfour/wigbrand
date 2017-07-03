@@ -4,7 +4,7 @@
 
 // Dependencies
 // =============================================================
-var Chirp = require("../models/chirp.js");
+var User = require("../models/user.js");
 
 
 // Routes
