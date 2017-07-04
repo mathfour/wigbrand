@@ -7,10 +7,10 @@ var Sequelize = require("sequelize");
 var sequelize = require("../config/connection.js");
 
 // Creates a "User" model that matches up with DB
-var User = sequelize.define("user", {
-  ID: {
-    type: Sequelize.INTEGER
-  },
+var User = sequelize.define("survey", {
+  // ID: {
+  //   type: Sequelize.INTEGER
+  // },
   state: {
     type: Sequelize.STRING
   },
