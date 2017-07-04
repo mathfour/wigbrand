@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Data Analysis</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"                                             integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"                                   crossorigin="anonymous">
+
+    <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+
+
 </head>
 <body>
 
@@ -23,7 +30,9 @@
                 <h3> Search By: </h3>
 
                 <div class="row">
-                    <select id="q2" class="selectpicker ignore">
+                    Race/Ethnicity:
+                    <select id="q1" class="selectpicker ignore">
+                        <option>All</option>
                         <option>American Indian</option>
                         <option>Asian</option>
                         <option>African American</option>
@@ -35,25 +44,9 @@
                 </div>
 
                 <div class="row">
-                    <select id="q1" class="selectpicker drp-downs">
-                        <option></option>
-                        <option value='1'>1</option>
-                        <option value='2'>2</option>
-                        <option value='3'>3</option>
-                        <option value='4'>4</option>
-                        <option value='5'>5</option>
-                        <option value='6'>6</option>
-                        <option value='7'>7</option>
-                        <option value='8'>8</option>
-                        <option value='9'>9</option>
-                        <option value='10'>10</option>
-                        <option value='11'>11</option>
-                        <option value='12'>12</option>
-                        <option value='13'>13</option>
-                        <option value='14'>14</option>
-                        <option value='15'>15</option>
-                        <option value='16'>16</option>
-                        <option value='17'>17</option>
+                    Age:
+                    <select id="q2" class="selectpicker drp-downs">
+                        <option>All</option>
                         <option value='18'>18</option>
                         <option value='19'>19</option>
                         <option value='20'>20</option>
@@ -141,8 +134,9 @@
                 </div>
 
                 <div class="row">
+                    State:
                     <select id="q3" class="selectpicker drp-downs">
-                        <option></option>
+                        <option>All</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -198,10 +192,9 @@
                 </div>  
 
                 <div class="row">
-                    <select id="q5" class="selectpicker drp-downs">
-                        <option></option>
-                        <option value="elementary">Elementary</option>
-                        <option value="Middle School">Middle School</option>
+                    Education Level:
+                    <select id="q4" class="selectpicker drp-downs">
+                        <option>All</option>
                         <option value="GED">GED</option>
                         <option value="HS">High School</option>
                         <option value="A.S.">Associates Degree</option>
@@ -211,14 +204,16 @@
                 </div>
 
                 <div class="row">
-                    <ul class="answers">
-                        <input type="radio" name="q4" value="F" id="q1a"><label for="q1a"> Female</label><br/>
-                        <input type="radio" name="q4" value="M" id="q1b"><label for="q1b">Male</label><br/>
-                    </ul>
+                    Gender:
+                    <select id="q5" class="selectpicker drp-downs">
+                        <option>All</option>
+                        <option value="F">Female</option>
+                        <option value="M">Male</option>
+                    </select>
                 </div>
 
                 <div class="row">
-                    <button>Submit</button>
+                    <button id="search">Search</button>
                 </div>
             </div>
 
@@ -226,13 +221,16 @@
 
             <div id="chart" class="col-md-8">
 
-                <img src="../public/images/bellcurve.gif" class="imgDem">
+                <img src="/../public/images/bellcurve.gif" class="imgDem">
 
             </div>
         </div>
     </div>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"                    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="/../public/js/search.js"></script>
+
     
 </body>
 </html>
