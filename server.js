@@ -20,13 +20,13 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // Static directory
-app.use(express.static("app/public"));
+app.use(express.static("./public"));
 
 
 // Routes
 // =============================================================
-require("./app/routes/api-routes.js")(app);
-require("./app/routes/html-routes.js")(app);
+require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 
 
 // Starts the server to begin listening

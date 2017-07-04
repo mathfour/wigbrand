@@ -17,6 +17,9 @@ var User = sequelize.define("user", {
   age: {
     type: Sequelize.INTEGER
   },
+  race: {
+    type: Sequelize.STRING
+  },
   gender: {
     type: Sequelize.STRING
   },
