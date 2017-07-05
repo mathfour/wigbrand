@@ -7,7 +7,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
-
+var db = require('./models');
 
 // Sets up the Express App
 // =============================================================
@@ -33,6 +33,9 @@ require("./routes/html-routes.js")(app);
 
 // Starts the server to begin listening
 // =============================================================
-app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
+db.sequelize.sync({force: false}).then(function () {
+    // bmc: force: true deletes the table so you can start over
+    app.listen(PORT, function () {
+        console.log("App listening on PORT " + PORT);
+    });
 });
