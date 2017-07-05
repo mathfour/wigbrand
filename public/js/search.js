@@ -1,7 +1,4 @@
 
-$(document).ready(function() {
-    console.log("ready");
-});
 
 $("#search").on("click", function() {
 
@@ -11,23 +8,16 @@ $("#search").on("click", function() {
     var education = $("#q4").val();
     var gender = $("#q5").val();
 
-
-
     var currentLocation = window.location.href;
 
     console.log(currentLocation);
+    var url = `/${race}/${age}/${state}/${education}/${gender}`;
+    console.log(currentLocation + url);
 
-    var url = '/data-analysis/' + `${race}/${age}/${state}/${education}/${gender}`;
-    console.log(url);
-
-    $.post(url)
-        .done(function(data) {
-            console.log(data);
-        });
-
-
-
-
+    $.ajax({ url: currentLocation + url, method: "POST"})
+            .done(function(data) {
+                console.log(data);
+            });
 
     return false;
 
