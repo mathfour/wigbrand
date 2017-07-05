@@ -1,4 +1,4 @@
-### THE M.A.R.S. PROJECT ![image](public/images/readme.jpg)
+### THE M.A.R.S. PROJECT ![image](public/images/readme.jpeg)
 - Team Wigbrand Members:  Bon Crowder, Marcus Smith, Darrell Freeaman
 - Presentation Date: 07/08/17
 - Tools Used:  HTML, CSS, Javascript, JQuery, JSON, Plotly.js, Node.js, Express, Sequelize, MySQL, Github, Heroku,
@@ -47,7 +47,9 @@ This app performs two different tasks.
 
 - For administrators and governance, a set of dropdown menus is presented to allow for querying the results for different subgroups within the database.  
 
-For instance the below image shows the test results for all people with Race = "White" and Location = "California".  From this chart, it can be seen that questions 5, 13, and 23 had the highest levels of "Much" answers, indicating that:
+![Chart](public/images/chart.png)
+
+For instance the chart presented above shows the test results for all people with Race = "White" and Location = "California".  From this chart, it can be seen that questions 5, 13, and 23 had the highest levels of "Much" answers, indicating that:
 
 - Question 5:  Picking up a math textbook to begin working on a homework assignment, 
 - Question 13:  Opening a math or stat book an seeing a page full of problems, and
