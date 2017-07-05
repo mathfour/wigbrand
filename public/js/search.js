@@ -13,15 +13,17 @@ $("#search").on("click", function() {
 
 
 
-    var currentLocation = window.location;
+    var currentLocation = window.location.href;
 
     console.log(currentLocation);
 
-    $.post(currentLocation + `/${race}/${age}/${state}/${education}/${gender}`, function(data) {
+    var url = '/data-analysis/' + `${race}/${age}/${state}/${education}/${gender}`;
+    console.log(url);
 
-        console.log(data);
-
-    });
+    $.post(url)
+        .done(function(data) {
+            console.log(data);
+        });
 
 
 
