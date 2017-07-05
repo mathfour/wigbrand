@@ -16,7 +16,6 @@ $("#search").on("click", function() {
     var currentLocation = window.location;
 
     console.log(currentLocation);
-
     $.post(currentLocation + `/${race}/${age}/${state}/${education}/${gender}`, function(data) {
 
         console.log(data);
