@@ -10,9 +10,7 @@ $("#search").on("click", function() {
 
     var currentLocation = window.location.href;
 
-    console.log(currentLocation);
     var url = `/${race}/${age}/${state}/${education}/${gender}`;
-    console.log(currentLocation + url);
 
     $.ajax({ url: currentLocation + url, method: "GET"})
             .done(function(data) {

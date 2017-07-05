@@ -33,12 +33,9 @@ $("#submit").on("click", function(){
                 !$("input[name=q30]:checked").val()
         ) 
     {
-        console.log("this should run!");           
         alert("You have left one or more questions unanswered.");        
     } 
     else {
-
-        var currentLocation = window.location.href;
 
         var results = [
                     parseInt($("#q1 option:selected").val()),
@@ -78,7 +75,7 @@ $("#submit").on("click", function(){
                         console.log(data);
                     });
                 }
-                
+
             console.log(results);
 
             return false;
