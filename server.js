@@ -21,20 +21,13 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // Static directory
-<<<<<<< HEAD
 app.use(express.static('public'));
 
-=======
-app.use(express.static("./public"));
->>>>>>> 79daa27f8bd3c745e8ef09d1eaad57e60b2456e0
+// app.use(express.static("./public"));
 
 // Routes
 // =============================================================
 require("./routes/api-routes.js")(app);
-<<<<<<< HEAD
-=======
-
->>>>>>> 79daa27f8bd3c745e8ef09d1eaad57e60b2456e0
 require("./routes/html-routes.js")(app);
 
 
