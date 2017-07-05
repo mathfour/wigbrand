@@ -3,8 +3,9 @@
 ### THE M.A.R.S. PROJECT 
 - Team Wigbrand Members:  Bon Crowder, Marcus Smith, Darrell Freeaman
 - Presentation Date: 07/08/17
-- Tools Used:  HTML, CSS, Javascript, JQuery, JSON, Plotly.js, Node.js, Express, Sequelize, MySQL, Github, Heroku,                     
+- Tools Used:  HTML, CSS, Javascript, JQuery, JSON, Plotly.js, Node.js, Express, Sequelize, MySQL, Github, Heroku,                   
   NPM's (express, body-parser, mysql, mysql2, path, sequelize, sequelize-cli)
+- Heroku URL:  https://ancient-coast-65501.herokuapp.com/
 ***
 
 Many students claim not to like math. But for some, the issue with math is more than simply disliking algebra or fractions.  For some students, doing math can cause negative emotions like fear of failure. This harms their ability to perform.  This is called ‘MATH ANXIETY’.
