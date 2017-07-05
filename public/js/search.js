@@ -14,7 +14,7 @@ $("#search").on("click", function() {
     var url = `/${race}/${age}/${state}/${education}/${gender}`;
     console.log(currentLocation + url);
 
-    $.ajax({ url: currentLocation + url, method: "POST"})
+    $.ajax({ url: currentLocation + url, method: "GET"})
             .done(function(data) {
                 console.log(data);
             });

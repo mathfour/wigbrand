@@ -140,3 +140,20 @@
             left: 25px;
             margin-bottom: 15px;
         }
+
+        .p-position {
+            position: relative;
+            top:250px;
+
+
+        }
+
+        .h-position {
+            position: relative;
+            top:100px; 
+            border-top: solid 5px;
+            border-bottom: solid 5px;
+            font-size:50px;
+            color: white;
+            padding-bottom: 4px;
+        }

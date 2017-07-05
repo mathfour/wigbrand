@@ -1,6 +1,4 @@
-$(function() {
-
-    $("#submit").on("click", function(){
+$("#submit").on("click", function(){
 
             if (
                parseInt($("#q1 option:selected").val()) === NaN ||
@@ -40,6 +38,8 @@ $(function() {
     } 
     else {
 
+        var currentLocation = window.location.href;
+
         var results = [
                     parseInt($("#q1 option:selected").val()),
                     $("#q2 option:selected").text(),
@@ -73,11 +73,13 @@ $(function() {
                     parseInt($("input[name=q30]:checked").val()),
                 ];
 
-                //then we'll send the post request
-            }
+                $.post("/survey/new", results)
+                    .done(function(data) {
+                        console.log(data);
+                    });
+                }
+                
             console.log(results);
 
             return false;
         });
-
-})
