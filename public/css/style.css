@@ -140,3 +140,25 @@
             left: 25px;
             margin-bottom: 15px;
         }
+
+        #about {
+            margin-top: 50px;
+            margin-left: 50px;
+            font-size: 1.5em;
+            margin-right: 50px;
+        }
+
+        #about h2 {
+            border-bottom: 5px solid #333;
+        }
+
+        #darrell img {
+            margin-top: 30px;
+            float: left;
+        }
+
+        #darrell p {
+            margin-left: 30px;
+            margin-top: 30px;
+            float: left;
+        }
