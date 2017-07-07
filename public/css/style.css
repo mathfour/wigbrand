@@ -217,3 +217,12 @@
             color: white;
             padding-bottom: 4px;
         }
+
+        .svg-container {
+            width: 1500px;
+        }
+
+        .main-svg {
+            padding-left: 120px;
+            width: 950px;
+        }
