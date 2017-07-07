@@ -1,5 +1,3 @@
-// Dependencies
-// =============================================================
 
 module.exports = function (sequelize, DataTypes) {
     var Survey = sequelize.define("Survey", {
@@ -99,3 +97,4 @@ module.exports = function (sequelize, DataTypes) {
     });
     return Survey;
 };
+

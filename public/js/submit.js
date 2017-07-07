@@ -1,6 +1,4 @@
-$(function() {
-
-    $("#submit").on("click", function(){
+$("#submit").on("click", function(){
 
             if (
                parseInt($("#q1 option:selected").val()) === NaN ||
@@ -35,7 +33,6 @@ $(function() {
                 !$("input[name=q30]:checked").val()
         ) 
     {
-        console.log("this should run!");           
         alert("You have left one or more questions unanswered.");        
     } 
     else {
@@ -73,11 +70,13 @@ $(function() {
                     parseInt($("input[name=q30]:checked").val()),
                 ];
 
-                //then we'll send the post request
-            }
+                $.post("/survey/new", results)
+                    .done(function(data) {
+                        console.log(data);
+                    });
+                }
+
             console.log(results);
 
             return false;
         });
-
-})
