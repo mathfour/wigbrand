@@ -6,6 +6,7 @@
 // DataTypes (lowercase) references our connection to the DB.
 //var DataTypes = require("../config/connection.js");
 
+<<<<<<< HEAD
 module.exports = function(sequelize, DataTypes) {
 
 
@@ -117,3 +118,5 @@ module.exports = function(sequelize, DataTypes) {
 //User.sync();
 
 // Makes the User Model available for other files (will also create a table)
+=======
+>>>>>>> d975ca2ab6ab30e24771499982a85cba17fb0f66

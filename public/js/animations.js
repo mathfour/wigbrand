@@ -36,6 +36,8 @@
                 $("#list").css("transform", "translateX(-13em)");
                 $("#title").removeClass("w").addClass("b");
                 $("a").removeClass("w").addClass("b");
+                $("#logo").attr("src", "../public/images/WigBrandLogoFavicon.png");
+                $("#logo").addClass("logo-2");
             }
 
             // the position the navbar elements will be by default
@@ -47,6 +49,10 @@
                 $("#list").css("transform", "translateX(0em)");
                 $("#title").removeClass("b").addClass("w");
                 $("a").removeClass("b").addClass("w");
+                $("#logo").attr("src", "../public/images/WigBrand_500x385.png");
+                $("#logo").removeClass("logo-2");
+
+
             }
 
         });
