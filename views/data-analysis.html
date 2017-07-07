@@ -11,10 +11,25 @@
 			  src="https://code.jquery.com/jquery-3.2.1.min.js"
 			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			  crossorigin="anonymous"></script>
-
+              
+    <link rel="stylesheet" href="../public/css/style.css">
 
 </head>
 <body>
+
+    <nav class="navbar nav-color-1">
+        <div id="words" class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Wigbrand</a>
+            </div>
+            <ul class="nav navbar-nav pull-right">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/survey">Survey</a></li>
+                <li><a href="/data-analysis">Data Analysis</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <h1 align="center"> Data Analysis </h1>
 
@@ -217,20 +232,19 @@
                 </div>
             </div>
 
-            
-
             <div id="chart" class="col-md-8">
-
-                <img src="../images/bellcurve.gif" class="imgDem">
-
             </div>
         </div>
     </div>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"                    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="/../public/js/search.js"></script>
+    <script>
 
+    $('#search').on("click", function () {
+        $('#chart').prepend('<img src="../public/images/chart.png" width="700" height="700"/>');
+    });
+    </script>
     
 </body>
 </html>
