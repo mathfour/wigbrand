@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-// Dependencies
-// =============================================================
-=======
->>>>>>> 7c438f0653c3f52c62dd70374ead33fa5d0545da
 
 module.exports = function (sequelize, DataTypes) {
     var Survey = sequelize.define("Survey", {
@@ -102,8 +97,4 @@ module.exports = function (sequelize, DataTypes) {
     });
     return Survey;
 };
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 7c438f0653c3f52c62dd70374ead33fa5d0545da
