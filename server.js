@@ -7,9 +7,14 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
+<<<<<<< HEAD
 
 var db = require("./models/user");
 
+=======
+
+var db = require('./models');
+>>>>>>> 19ad6d3aac97853740e588cbcbbdb853386c684d
 
 // Sets up the Express App
 // =============================================================
@@ -25,7 +30,10 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Static directory
 app.use(express.static('public'));
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 19ad6d3aac97853740e588cbcbbdb853386c684d
 // Routes
 // =============================================================
 require("./routes/api-routes.js")(app);
@@ -34,9 +42,17 @@ require("./routes/html-routes.js")(app);
 
 // Starts the server to begin listening
 // =============================================================
+<<<<<<< HEAD
+=======
+
+>>>>>>> 19ad6d3aac97853740e588cbcbbdb853386c684d
 db.sequelize.sync({force: false}).then(function () {
     // bmc: force: true deletes the table so you can start over
     app.listen(PORT, function () {
         console.log("App listening on PORT " + PORT);
     });
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 19ad6d3aac97853740e588cbcbbdb853386c684d
