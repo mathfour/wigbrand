@@ -1,25 +1,25 @@
 
-// Dependencies
-// =============================================================
-var User = require("../models/user.js");
+const db = require("../models");
 
 module.exports = function(app) {
 
-   app.get("/:race/:age/:state/:education/:gender", function(req,res) {
-// db.User.findAll(
-//     where: {
-//         age: req.params.age,
-//         state: req.params.states,
-//         gender: req.params.gender,
-//         education: req.params.education,
-//         race: req.params.race;  
-//     }
+   app.get("/data-analysis/:race/:age/:state/:education/:gender", (req, res) => {
 
-    res.send("this thing worked!");
-//);
+     db.User.findAll({})
+        .then(function(data) {
+          res.send(data);
+        });
+
+    //  res.send(`${req.params.race}${req.params.age}${req.params.state}${req.params.education}${req.params.gender}`);
+
+   })
+    
+
+  app.post("/survey/new", (req, res) => {
+
+    res.send("you have successfully posted you stuff holmes!");
 
   });
 
+
 }
-
-

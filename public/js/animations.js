@@ -40,7 +40,6 @@
 
             function init () {
                 $("#content-1").removeClass("slide-in-right-2").addClass("slide-in-right-1");
-                $("#big-picture").removeClass("tint");
                 $("nav").removeClass("nav-color-2").addClass("nav-color-1");
                 $("#title").css("transform", "translateX(0em)");
                 $("#list").css("transform", "translateX(0em)");
