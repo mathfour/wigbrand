@@ -6,7 +6,6 @@
     .imgDem {
         position: relative;
         right: 65px; 
-
     }
 
     .psPos {
@@ -16,17 +15,22 @@
     }
 
     .psPos2 {
-
+        width: 550px;
+        position: relative;
     }
 
     .psPos3 {
         width: 600px;
         position: relative;
     }
-    
-    
 
-
+    .slide-in-left-2 {
+        background: #414241;
+        height: 450px;
+        width: 1237px;
+        transition: all .9s;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -34,8 +38,6 @@
     .imgDem {
         position: relative;
         right: 145px; 
-        
-
     }
 
     .psPos {
@@ -52,28 +54,39 @@
         width: 500px;
         position: relative;
     }
+
+    .slide-in-left-2 {
+        background: #414241;
+        height: 450px;
+        width: 1137px;
+        transition: all .9s;
+        margin-top: 10px;
+    }
     
     
 
 
 }
 
-@media screen and (max-width: 1095px) {
+@media screen and (max-width: 1088px) {
 
     .square {
-        background: black;
+        background-image: url(../images/photo1.jpg);;
         background-repeat: no-repeat;
         background-size: 100%;
         width: 100%;
-        height: 600px;
+        height: 0px;
         margin-top: 60px;
         position: relative;
     }
 
-    /*-image: url(../images/photo1.jpg);*/
+    .h-position {
+        display: none;
+    }
 
-
-
+    .p-position {
+        display: none;
+    }
 
 }
 
@@ -91,12 +104,12 @@
         }
 
         .square {
-            background-image: url("../images/photo1.jpg");
+            background-image: url(../images/photo1.jpg);;
             background-repeat: no-repeat;
-            background-size:100%;
+            background-size: 100%;
             width: 100%;
-            height: 300px;
-            margin-top: 40px;
+            height: 600px;
+            margin-top: 60px;
             position: relative;
         }
 
@@ -108,8 +121,6 @@
     .imgDem {
         position: relative;
         right: 275px; 
-        
-
     }
 
     .psPos {
@@ -164,7 +175,7 @@
     .psPos2 {
         width: 600px;
         position: relative;
-        left: 180px;
+        right: -170px;
     }
 
     .psPos3 {
