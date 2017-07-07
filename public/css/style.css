@@ -19,13 +19,13 @@
         }
 
         .nav-color-1 {
-            background: #2e4053; 
+            background: #2e4053;
             padding: 20px;
             transition: all .9s;   
         }
 
         .nav-color-2 {
-            background:  black;  
+            background:  black;
             transition: all .9s;
         }
 
@@ -201,3 +201,19 @@
             margin-left: 50px;
         }
 
+        .p-position {
+            position: relative;
+            top:250px;
+
+
+        }
+
+        .h-position {
+            position: relative;
+            top:100px; 
+            border-top: solid 5px;
+            border-bottom: solid 5px;
+            font-size:50px;
+            color: white;
+            padding-bottom: 4px;
+        }
