@@ -8,6 +8,18 @@
             transition: all .9s;
         }
 
+        .w {
+            color: white;
+            transition: all .9s;
+
+        }
+
+        .b {
+            color: #007ba7;
+            transition: all .9s;
+
+        }
+
         .square {
             background-image: url("../images/photo1.jpg");
             background-repeat: no-repeat;
@@ -19,13 +31,13 @@
         }
 
         .nav-color-1 {
-            background: #2e4053;
+            background: #007ba7;
             padding: 20px;
             transition: all .9s;   
         }
 
         .nav-color-2 {
-            background:  black;
+            background:  white;
             transition: all .9s;
         }
 
@@ -40,7 +52,7 @@
         }
 
         .slide-in-right-2 {
-            background: #171735;
+            background: #007ba7;
             height: 450px;
             width: 1382px;
             transition: all .9s;
@@ -57,7 +69,7 @@
         }
 
         .slide-in-left-2 {
-            background: #414241;
+            background: #979997;
             height: 450px;
             width: 1382px;
             transition: all .9s;
@@ -103,7 +115,7 @@
             font-family: Arial;
             color: #ffffff;
             font-size: 50px;
-            background: rgba(10, 51, 79, 0.4);
+            background: rgba(0,123,167, 0.3);
             padding: 25px 25px 25px 26px;
             border: solid #ffffff 5px;
             text-decoration: none;
@@ -156,4 +168,9 @@
             font-size:50px;
             color: white;
             padding-bottom: 4px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
         }

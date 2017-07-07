@@ -34,6 +34,8 @@
                 $("nav").removeClass("nav-color-1").addClass("nav-color-2");
                 $("#title").css("transform", "translateX(13em)");
                 $("#list").css("transform", "translateX(-13em)");
+                $("#title").removeClass("w").addClass("b");
+                $("a").removeClass("w").addClass("b");
             }
 
             // the position the navbar elements will be by default
@@ -43,7 +45,8 @@
                 $("nav").removeClass("nav-color-2").addClass("nav-color-1");
                 $("#title").css("transform", "translateX(0em)");
                 $("#list").css("transform", "translateX(0em)");
-
+                $("#title").removeClass("b").addClass("w");
+                $("a").removeClass("b").addClass("w");
             }
 
         });
