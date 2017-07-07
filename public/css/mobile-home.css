@@ -1,11 +1,8 @@
- 
-
-
 @media screen and (max-width: 1350px) {
 
     .imgDem {
         position: relative;
-        right: 65px; 
+        right: 65px;
 
     }
 
@@ -16,16 +13,22 @@
     }
 
     .psPos2 {
-
+        width: 550px;
+        position: relative;
     }
 
     .psPos3 {
         width: 600px;
         position: relative;
     }
-    
-    
 
+    .slide-in-left-2 {
+        background: #414241;
+        height: 450px;
+        width: 1237px;
+        transition: all .9s;
+        margin-top: 10px;
+    }
 
 }
 
@@ -33,8 +36,7 @@
 
     .imgDem {
         position: relative;
-        right: 145px; 
-        
+        right: 145px;
 
     }
 
@@ -52,16 +54,53 @@
         width: 500px;
         position: relative;
     }
-    
-    
 
-
+    .slide-in-left-2 {
+        background: #414241;
+        height: 450px;
+        width: 1137px;
+        transition: all .9s;
+        margin-top: 10px;
+    }
 }
 
-@media screen and (max-width: 1095px) {
+@media screen and (max-width: 1088px) {
 
     .square {
-        background: black;
+        /*background: black;*/
+        background-image: url(../images/photo1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        /*height: 600px;*/
+        height: 0px;
+        margin-top: 60px;
+        position: relative;
+    }
+
+    .h-position {
+        display: none;
+    }
+
+    .p-position {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .tint {
+        z-index: 1;
+        height: 0px;
+        width: 0px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.0);
+        transition: ease-in-out .5s;
+    }
+
+    .square {
+        background-image: url(../images/photo1.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         width: 100%;
@@ -69,46 +108,13 @@
         margin-top: 60px;
         position: relative;
     }
-
-    /*-image: url(../images/photo1.jpg);*/
-
-
-
-
-}
-
-
-@media screen and (max-width: 1080px) {
-    .tint {
-            z-index: 1;
-            height: 0px;
-            width: 0px;
-            position: relative;
-            top: 0px;
-            left: 0px;
-            background: rgba(0, 0, 0, 0.0); 
-            transition: ease-in-out .5s;
-        }
-
-        .square {
-            background-image: url("../images/photo1.jpg");
-            background-repeat: no-repeat;
-            background-size:100%;
-            width: 100%;
-            height: 300px;
-            margin-top: 40px;
-            position: relative;
-        }
-
-
 }
 
 @media screen and (max-width: 1000px) {
 
     .imgDem {
         position: relative;
-        right: 275px; 
-        
+        right: 275px;
 
     }
 
@@ -126,8 +132,6 @@
         width: 400px;
         position: relative;
     }
-
-    
 
 }
 
@@ -164,7 +168,8 @@
     .psPos2 {
         width: 600px;
         position: relative;
-        left: 180px;
+        /*left: 180px;*/
+        right: -170px;
     }
 
     .psPos3 {
@@ -173,11 +178,11 @@
     }
 
     .vcenter {
-            margin-top: 40px;
-        }
+        margin-top: 40px;
+    }
 
     .vcenter2 {
-        margin-top:40px;
+        margin-top: 40px;
     }
 
     #title {
@@ -192,7 +197,7 @@
 
     }
 
-        * {
+    * {
         /*CSS transitions*/
         /*-o-transition-property: none !important;
         -moz-transition-property: none !important;
@@ -254,8 +259,8 @@
     }
 
     .vcenter {
-            margin-top: 40px;
-        }
+        margin-top: 40px;
+    }
 
 }
 
@@ -269,17 +274,17 @@
     }
 
     .nav-color-2 {
-        background:  black;  
+        background: black;
         transition: all .9s;
         height: 50px;
     }
-    
+
     #list {
         list-style-type: none;
         position: relative;
         bottom: 50px;
         transform: translateX(0em);
-    } 
+    }
 
     #list {
         display: inline-flex;
@@ -289,7 +294,7 @@
         transform: translate(0em);
     }
 
-        * {
+    * {
         /*CSS transitions*/
         /*-o-transition-property: none !important;
         -moz-transition-property: none !important;
@@ -309,8 +314,6 @@
         -ms-animation: none !important;
         animation: none !important;
     }
-        
-
 
 }
 
@@ -318,8 +321,8 @@
     .imgDem {
         position: relative;
         left: 0px;
-        width:500px;
-        height:350px;
+        width: 500px;
+        height: 350px;
     }
 
     .slide-in-right-2 {
@@ -339,7 +342,7 @@
     }
 
     .psPos {
-        width:500px;
+        width: 500px;
         position: relative;
         left: 0px;
 
@@ -355,7 +358,7 @@
     }
 
     .vcenter {
-            margin-top: 40px;
-        }
+        margin-top: 40px;
+    }
 
 }
