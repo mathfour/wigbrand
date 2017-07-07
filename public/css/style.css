@@ -71,7 +71,7 @@
         .slide-in-left-2 {
             background: #979997;
             height: 450px;
-            width: 1382px;
+            width: 100%;
             transition: all .9s;
             margin-top: 10px;
         }
