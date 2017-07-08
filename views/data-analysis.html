@@ -41,12 +41,12 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-2 text-center">
+            <div class="col-md-2 text-left">
                 <h3> Search By: </h3>
-
+                    <div id="form">
                 <div class="row">
-                    Race/Ethnicity:
-                    <select id="q1" class="selectpicker ignore">
+                    <p class="question">Race/Ethnicity:</p>
+                    <select id="q1" class="selectpicker ignore drp-downs">
                         <option>All</option>
                         <option>American Indian</option>
                         <option>Asian</option>
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="row">
-                    Age:
+                    <p class="question">Age:</p>
                     <select id="q2" class="selectpicker drp-downs">
                         <option>All</option>
                         <option value='18'>18</option>
@@ -149,7 +149,7 @@
                 </div>
 
                 <div class="row">
-                    State:
+                    <p class="question">State:</p>
                     <select id="q3" class="selectpicker drp-downs">
                         <option>All</option>
                         <option value="AL">Alabama</option>
@@ -207,7 +207,7 @@
                 </div>  
 
                 <div class="row">
-                    Education Level:
+                    <p class="question">Education Level:</p>
                     <select id="q4" class="selectpicker drp-downs">
                         <option>All</option>
                         <option value="GED">GED</option>
@@ -219,17 +219,18 @@
                 </div>
 
                 <div class="row">
-                    Gender:
+                    <p class="question">Gender:</p>
                     <select id="q5" class="selectpicker drp-downs">
                         <option>All</option>
                         <option value="F">Female</option>
                         <option value="M">Male</option>
                     </select>
                 </div>
-
+            
                 <div class="row">
                     <button id="search">Search</button>
                 </div>
+                    </div>
             </div>
 
             <div id="chart" class="col-md-10 img-responsive center-block" style="width : 900px ; height : 450px;" ></div>
