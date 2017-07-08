@@ -8,9 +8,9 @@ $("#search").on("click", function() {
     var education = $("#q4").val();
     var gender = $("#q5").val();
 
-    var currentLocation = window.location.href;
-
-    var url = `/${race}/${age}/${state}/${education}/${gender}`;
+    // var currentLocation = window.location.href;
+    //
+    // var url = `/${race}/${age}/${state}/${education}/${gender}`;
 
 
     $.ajax({ url: currentLocation + url, method: "GET"})
