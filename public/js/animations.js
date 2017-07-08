@@ -36,7 +36,7 @@ $(function () {
         $("#list").css("transform", "translateX(-13em)");
         $("#title").removeClass("w").addClass("b"); // bmc: added by marcus
         $("a").removeClass("w").addClass("b"); // bmc: added by marcus
-        $("#logo").attr("src", "../public/images/WigBrandLogoFavicon.png");
+        $("#logo").attr("src", "../public/images/WigBrandLogoWords200x55.png");
         $("#logo").addClass("logo-2");
     }
 
