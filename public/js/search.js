@@ -12,6 +12,7 @@ $("#search").on("click", function() {
     //
     // var url = `/${race}/${age}/${state}/${education}/${gender}`;
 
+
     $.ajax({ url: currentLocation + url, method: "GET"})
             .done(function(data) {
                 console.log(data);

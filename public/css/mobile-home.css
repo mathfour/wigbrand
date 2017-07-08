@@ -2,8 +2,12 @@
 
     .imgDem {
         position: relative;
+<<<<<<< HEAD
+        right: 65px; 
+=======
         right: 65px;
 
+>>>>>>> c4e04c5a2d2fffda51dcbabd836f012aec6dac6a
     }
 
     .psPos {
@@ -30,14 +34,20 @@
         margin-top: 10px;
     }
 
+    .slide-in-left-2 {
+        background: #414241;
+        height: 450px;
+        width: 1237px;
+        transition: all .9s;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
 
     .imgDem {
         position: relative;
-        right: 145px;
-
+        right: 145px; 
     }
 
     .psPos {
@@ -62,17 +72,26 @@
         transition: all .9s;
         margin-top: 10px;
     }
+    
+    
+
+
+    .slide-in-left-2 {
+        background: #414241;
+        height: 450px;
+        width: 1137px;
+        transition: all .9s;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 1088px) {
 
     .square {
-        /*background: black;*/
-        background-image: url(../images/photo1.jpg);
+        background-image: url(../images/photo1.jpg);;
         background-repeat: no-repeat;
         background-size: 100%;
         width: 100%;
-        /*height: 600px;*/
         height: 0px;
         margin-top: 60px;
         position: relative;
@@ -89,15 +108,25 @@
 
 @media screen and (max-width: 1080px) {
     .tint {
-        z-index: 1;
-        height: 0px;
-        width: 0px;
-        position: relative;
-        top: 0px;
-        left: 0px;
-        background: rgba(0, 0, 0, 0.0);
-        transition: ease-in-out .5s;
-    }
+            z-index: 1;
+            height: 0px;
+            width: 0px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            background: rgba(0, 0, 0, 0.0); 
+            transition: ease-in-out .5s;
+        }
+
+        .square {
+            background-image: url(../images/photo1.jpg);;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 100%;
+            height: 600px;
+            margin-top: 60px;
+            position: relative;
+        }
 
     .square {
         background-image: url(../images/photo1.jpg);
@@ -114,8 +143,7 @@
 
     .imgDem {
         position: relative;
-        right: 275px;
-
+        right: 275px; 
     }
 
     .psPos {
@@ -168,7 +196,6 @@
     .psPos2 {
         width: 600px;
         position: relative;
-        /*left: 180px;*/
         right: -170px;
     }
 
