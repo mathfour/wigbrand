@@ -35,7 +35,9 @@ $(function () {
         $("#title").css("transform", "translateX(13em)");
         $("#list").css("transform", "translateX(-13em)");
         $("#title").removeClass("w").addClass("b"); // bmc: added by marcus
-        +$("a").removeClass("w").addClass("b"); // bmc: added by marcus
+        $("a").removeClass("w").addClass("b"); // bmc: added by marcus
+        $("#logo").attr("src", "../public/images/WigBrandLogoFavicon.png");
+        $("#logo").addClass("logo-2");
     }
 
     // the position the navbar elements will be by default
@@ -46,7 +48,9 @@ $(function () {
         $("#title").css("transform", "translateX(0em)");
         $("#list").css("transform", "translateX(0em)");
         $("#title").removeClass("b").addClass("w"); // bmc: by marcus
-        +$("a").removeClass("b").addClass("w");     // bmc: by marcus
+        $("a").removeClass("b").addClass("w");     // bmc: by marcus
+        $("#logo").attr("src", "../public/images/WigBrand_500x385.png");
+        $("#logo").removeClass("logo-2");
     }
 
 });

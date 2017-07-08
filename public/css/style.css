@@ -21,18 +21,18 @@ body {
 }
 
 .square {
-    background-image: url("../images/photo1.jpg");
+    background-image: url("../images/Depositphotos_4759508_original.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
     height: 700px;
-    margin-top: 40px;
+    margin-top: 55px;
     position: relative;
 }
 
 .nav-color-1 {
     background: #007ba7;
-    padding: 20px;
+    padding: 35px;
     transition: all .9s;
 }
 
@@ -77,7 +77,7 @@ body {
 }
 
 .bottom-content {
-    background-image: url(../images/kid4.jpg);
+    background-image: url(../images/Depositphotos_138617842_original.jpg);
     height: 450px;
     width: 100%;
     transition: all .9s;
@@ -241,4 +241,10 @@ a {
 .main-svg {
     padding-left: 120px;
     width: 950px;
+}
+
+.logo-2 {
+    width: 70px;
+    height: 37px;
+    transition: ease-in-out .5s;
 }
